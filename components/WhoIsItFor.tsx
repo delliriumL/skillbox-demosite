@@ -116,7 +116,9 @@ export default function WhoIsItFor() {
           {audiences.map((item, i) => (
             <div
               key={item.number}
-              ref={(el) => (cardRefs.current[i] = el)}
+              ref={(el) => {
+                if (el) cardRefs.current[i] = el;
+              }}
               className={`bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group`}
             >
               <div className={`flex flex-col lg:flex-row ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
