@@ -66,7 +66,7 @@ export default function Footer() {
               {[
                 { href: "https://skillbox.ru", label: "Skillbox.ru", external: true },
                 { href: "https://skillbox.ru/english/", label: "Все курсы английского", external: true },
-                { href: "https://skillbox.ru/about/", label: "О компании", external: true },
+                { href: "https://skillbox.ru/company/", label: "О компании", external: true },
                 { href: "https://skillbox.ru/career/", label: "Вакансии", external: true },
               ].map((link) => (
                 <li key={link.href}>
@@ -98,7 +98,7 @@ export default function Footer() {
                   external: true,
                 },
                 {
-                  href: "https://skillbox.ru/legal/offer/",
+                  href: "https://skillbox.ru/legal-docs/chou/file/offerta_to_conclude_agreement.pdf?v=1719317044",
                   label: "Оферта",
                   external: true,
                 },
